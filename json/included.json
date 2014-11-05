@@ -1,0 +1,25 @@
+{
+   "headers": [
+   	{"id": "1", "title": "Header 1"},
+	{"id": "2", "title": "Header 2"},
+	{"id": "3", "title": "Header 3"}   
+   ],
+    "columns": [
+   	{"id": "1", "title": "Hero 1", "src": "hero1"},
+	{"id": "2", "title": "Hero 2", "src": "hero2"},
+	{"id": "3", "title": "Hero 3", "src": "hero3"},
+	{"id": "4", "title": "Hero 4", "src": "hero4"},
+	{"id": "5", "title": "Basic text", "src": "basic-text"} ,
+	{"id": "6", "title": "Promo box 1", "src": "promo-box-1"},
+	{"id": "7", "title": "Promo box 2", "src": "promo-box-2"},
+	{"id": "8", "title": "Promo box 3", "src": "promo-box-3"},
+	{"id": "9", "title": "Contact info box", "src": "promo-box-4"},
+	{"id": "10", "title": "Two columns layout 1", "src": "cols-1"},
+	{"id": "11", "title": "Two columns layout 2", "src": "cols-2"},
+	{"id": "12", "title": "Two columns layout 3", "src": "cols-3"},
+	{"id": "13", "title": "Three columns layout", "src": "cols-4"}        
+	],
+    "footers": [
+   	{"id": "1", "title": "Footer", "src": "footer" } 
+	]
+   }

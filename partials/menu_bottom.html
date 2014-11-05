@@ -1,0 +1,51 @@
+<div class="footer" ng-controller="exportCtrl">
+  <nav class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="navbar-header container-fluid">
+      <button type="button" class="navbar-toggle" ng-init="navCollapsed = true" ng-click="navCollapsed = !navCollapsed">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Options</a>
+    </div>
+    <div class="collapse navbar-collapse" ng-class="!navCollapsed && 'in'" ng-click="navCollapsed=true">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+          <button type="button" class="btn btn-danger navbar-btn" data-toggle="dropdown">Reset email <span class="caret"></span></button>
+          
+          <ul class="dropdown-menu" role="menu">
+            <li><a reset-email-button>Reset email</a></li>
+            <li class="divider"></li>
+            <li><a undo-reset-email>Undo reset</a></li>
+          </ul>
+          
+        </li>
+        
+        
+         <li class="dropdown">
+       
+          
+          <button type="button" class="btn btn-primary navbar-btn" data-toggle="dropdown">Email draft <span class="caret"></span></button>
+          
+          <ul class="dropdown-menu" role="menu">
+          	<li><a save-email-draft>Save email draft</a></li>
+            <li class="divider"></li>
+            <li><a revert-email-draft>Revert to draft</a></li>
+          </ul>
+        </li>
+        
+        
+      </ul>
+      
+       <form class="navbar-form navbar-left">
+         <span>Enter email title:</span>
+          <input type="text" class="form-control" ng-model="emailTitle">
+        
+        <button type="button" class="btn btn-success" ng-click="exportData()"><span class="glyphicon glyphicon-download-alt"></span> Download</button>
+   
+      </form>
+    </div>
+    <!-- /.navbar-collapse -->
+  </nav>
+</div>

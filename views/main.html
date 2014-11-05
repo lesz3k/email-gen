@@ -1,0 +1,33 @@
+
+<ul class="nav nav-pills nav-stacked include-partials">
+  <h3>Headers</h3>
+  
+  <li ng-repeat="item in items.headers" class="item">
+	<h4>{{item.title}} </h4>
+  
+    <add-header>
+    </add-header>
+    <div><img width="280" ng-src="images/email_bgs/headers/head{{item.id}}.jpg" /> </div>
+
+  </li>
+  
+  <h3>Columns</h3>
+  <li ng-repeat="column in items.columns" class="side-menu-items item">
+    <h4>{{column.title}}</h4>
+    	<div class="action-btn-grp">
+            <add-email-column></add-email-column>
+            <remove-email-column></remove-email-column>
+        </div>
+    <div><img width="280" ng-src="images/email_bgs/content/{{column.src}}.jpg" /> </div>
+  </li>
+  <h3>Footers</h3>
+  <li ng-repeat="item in items.footers" class="item">
+  <h4>{{item.title}} </h4>
+    <add-footer></add-footer>
+      <div><img width="280" ng-src="images/email_bgs/footers/{{item.src}}{{item.id}}.jpg" /> </div>
+  </li>
+</ul>
+
+<ng-include src="'partials/email_body.html'"></ng-include>
+
+<ng-include src="'partials/menu_bottom.html'"></ng-include>
